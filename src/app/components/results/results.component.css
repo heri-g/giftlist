@@ -1,0 +1,9 @@
+:host-context(.col-12[_ngcontent-c3]) div {
+    top: 15rem;
+}
+:host-context(.col-12[_ngcontent-c4]) div {
+    top: 15rem;
+}
+svg {
+    cursor: pointer !important;
+}

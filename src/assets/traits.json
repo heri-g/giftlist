@@ -1,0 +1,62 @@
+[
+    {
+        "who": "Is Active",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Reads Books",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Is A Workaholic",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Is A Gamer",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Is Social",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Is Fashionable",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Is A Make Up Artist",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Is A Streamer",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Enjoys Cooking",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Travels",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Is 420 Friendly",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Loves Movies",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Is A Sleepyhead",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Always Has Headphones On",
+        "btn": "btn-info"
+    },
+    {
+        "who": "Likes Cute Stuff",
+        "btn": "btn-info"
+    }
+]

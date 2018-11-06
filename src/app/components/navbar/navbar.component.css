@@ -1,0 +1,12 @@
+#giftList {
+    cursor: pointer !important;
+    opacity: 0.7;
+}
+#giftList:hover {
+    opacity: 1;
+}
+.modal-body {
+    max-height: 26rem;
+    overflow-y: scroll;
+}
+/* for media query try this height:   max-height: 70vh; */

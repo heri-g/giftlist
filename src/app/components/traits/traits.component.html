@@ -1,0 +1,8 @@
+<div class="text-center d-none animated" #traits>
+  <h1>This Person:</h1>
+  <span class="lead">(Choose at least 5 characteristics, feel free to choose more)</span>
+  <section class="mt-5">
+    <button *ngFor="let key of keywords" type="button" [ngClass]="['btn', 'btn-lg', 'mx-2', 'my-2', 'c-shadow', key.btn]" (click)="identifier(key); localVarCheck(key)">{{ key.who }}</button>
+  </section>
+  <button type="button" class="btn btn-outline-warning cont c-shadow" (click)="continue()" #cont>Continue &#187;</button>
+</div>

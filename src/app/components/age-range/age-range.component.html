@@ -1,0 +1,25 @@
+<div class="d-none animated" #age>
+  <h1 class="mb-3">What are the persons age & gender?</h1>
+  <span class="lead">(Both are optional)</span>
+  <form class="mt-5">
+    <div class="form-group col-md-2 offset-md-5">
+      <label for="age"></label>
+      <input type="number" class="form-control" id="age" placeholder="e.g. 21" onkeydown="javascript: return event.keyCode == 69 ? false : true" [formControl]="receiverAge">
+    </div>
+  </form>
+  <div class="my-5">
+    <div class="custom-control custom-radio custom-control-inline mx-3">
+      <input type="radio" id="female" name="genderRadio" value="Female" class="custom-control-input" [formControl]="receiverGender">
+      <label class="custom-control-label" for="female">Female</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline mx-3">
+      <input type="radio" id="male" name="genderRadio" value="Male" class="custom-control-input" [formControl]="receiverGender">
+      <label class="custom-control-label" for="male">Male</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline mx-3">
+      <input type="radio" id="other" name="genderRadio" value="Other" class="custom-control-input" [formControl]="receiverGender">
+      <label class="custom-control-label" for="other">Other</label>
+    </div>
+  </div>
+  <button type="button" class="btn btn-outline-warning c-shadow" (click)="continue()">Continue &#187;</button>
+</div>

@@ -1,0 +1,47 @@
+.col-12 {
+    height: 10em;
+    display: block;
+}
+.col-12 ::ng-deep app-introduction #welcome {
+    margin: 0;
+    position: absolute;
+    top: 25rem;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.col-12 ::ng-deep app-price {
+    margin: 0;
+    position: absolute;
+    top: 25rem;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+.col-12 ::ng-deep app-age-range {
+    margin: 0;
+    position: absolute;
+    top: 25rem;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+.col-12 ::ng-deep app-traits {
+    margin: 0;
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.col-12 ::ng-deep app-results {
+    position: relative;
+    top: 80%;
+}
+.col-12 ::ng-deep app-results {
+    width: 100vw;
+    overflow: hidden;
+    top: 80%;
+}

@@ -45,3 +45,28 @@
     overflow: hidden;
     top: 80%;
 }
+@media (max-width: 992px) {
+  .col-12 ::ng-deep app-traits {
+    top: 25rem;
+  }
+}
+@media (max-width: 767px) {
+  .col-12 ::ng-deep app-traits {
+    top: 30rem;
+  }
+}
+@media (max-width: 500px) {
+  .col-12 ::ng-deep app-traits {
+    top: 33rem;
+  }
+}
+@media (max-width: 450px) {
+  .col-12 ::ng-deep app-traits {
+    top: 35rem;
+  }
+}
+@media (max-width: 400px) {
+  .col-12 ::ng-deep app-traits {
+    top: 40rem;
+  }
+}

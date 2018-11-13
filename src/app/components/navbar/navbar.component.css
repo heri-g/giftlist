@@ -5,8 +5,7 @@
 #giftList:hover {
     opacity: 1;
 }
-.modal-body {
-    max-height: 26rem;
-    overflow-y: scroll;
+.removeGift {
+    color: #ed5f65 !important;
 }
 /* for media query try this height:   max-height: 70vh; */

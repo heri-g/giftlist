@@ -10,12 +10,12 @@ import { GiftlistService } from "src/app/services/giftlist.service";
 })
 export class ResultsComponent implements OnInit {
 
-  @ViewChild('heartFull') hf;
-  @ViewChild('heartLess') hl;
-
   public stuff: any = [];
 
-  constructor(private load: LoaderService, private gl: GiftlistService) { }
+  constructor(
+    private load: LoaderService,
+    public gl: GiftlistService
+  ) {} 
 
   ngOnInit() {
     this.queryDatabase();
@@ -142,23 +142,12 @@ export class ResultsComponent implements OnInit {
     this.stuff.push({product: 'Blanket'});
     this.stuff.push({product: 'Smasung TV'});
     this.stuff.push({product: 'Fan'});
+
+    this.stuff.forEach((s, i) => s.id = i.toString());
+
     setTimeout(() => {
       this.load.flagLoader(false);
     }, 1000);
-  }
-
-  addToGiftList(i, s) {
-    let heartLess = document.getElementById(`heartLess${i}`);
-    let heartFull = document.getElementById(`heartFull${i}`);
-    if(!heartLess.classList.contains('d-none')) {
-      heartLess.classList.add('d-none');
-      heartFull.classList.remove('d-none');
-    }
-    else if(!heartFull.classList.contains('d-none')) {
-      heartFull.classList.add('d-none');
-      heartLess.classList.remove('d-none');
-    }
-    this.gl.addGiftToList(s);
   }
 
 }

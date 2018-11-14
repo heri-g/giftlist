@@ -43,4 +43,5 @@ export class GiftlistService {
       delete newHearts[gift.id];
       this.heartedGifts$.next(newHearts);
     }
+  }
 }

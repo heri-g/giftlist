@@ -4,3 +4,14 @@ div {
 .age-gender {
     margin-top: 15%
 }
+button {
+    position: absolute;
+    right: 10%;
+    bottom: -5%;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .age-gender {
+        margin-top: 30%;
+    }
+}

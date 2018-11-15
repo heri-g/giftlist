@@ -4,3 +4,14 @@ div {
 .traits {
     margin-top: 15%
 }
+#continue {
+    position: fixed;
+    right: 10%;
+    bottom: 5%;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .traits {
+        margin-top: 30%;
+    }
+}

@@ -4,13 +4,34 @@
 svg {
     cursor: pointer !important;
 }
+/* Media Queries */
+@media (max-width: 575px) {
+    .card {
+        max-width: none !important;
+    }
+}
+@media (min-width: 768px) {
+    #column {
+        padding-left: 0 !important;
+        padding-right: 0 !important
+    }
+    .card-wrapper {
+        padding-left: .5rem !important;
+        padding-right: .5rem !important;
+    }
+}
+@media (max-width: 767px) {
+    .results {
+        margin-top: 30%;
+    }
+}
 @media (min-width: 992px) {
     #column {
         padding-left: 0 !important;
         padding-right: 0 !important
     }
     .card-wrapper {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
     }
 }

@@ -4,3 +4,9 @@ div {
 .intro {
     margin-top: 15%;
 }
+/* Media Queries */
+@media (max-width: 768px) {
+    .intro {
+        margin-top: 30%;
+    }
+}

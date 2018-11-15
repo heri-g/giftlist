@@ -4,3 +4,14 @@ div {
 .price {
     margin-top: 15%
 }
+button {
+    position: absolute;
+    right: 10%;
+    bottom: -5%;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .price {
+        margin-top: 30%;
+    }
+}

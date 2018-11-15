@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top c-shadow">
-  <a class="navbar-brand" href="#">Gift</a>
+  <a class="navbar-brand" href="#">Gift Cinch</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -34,7 +34,7 @@
       <div class="modal-body">
         <!-- NgFor will display all available items on the list -->
         <section *ngIf="(gl.heartedLength$ | async) === 0">
-          <h4>Your list is empty, add Some Gifts!</h4>
+          <h4>Your list is empty, add some gifts!</h4>
         </section>
         <section *ngIf="(gl.heartedLength$ | async) > 0">
           <ul class="list-unstyled">

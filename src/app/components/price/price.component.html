@@ -1,9 +1,9 @@
-<div class="row price">
+<div class="row price mb-5">
   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
     <div class="d-none animated" #cPrice>
-      <h1 class="py-3 my-4">What's Your Price Range?</h1>
+      <h2 class="py-3 my-4">What's Your Price Range?</h2>
       <label for="priceRange"></label>
-      <input type="range" class="custom-range" min="1" max="5" id="priceRange" (mousemove)="observePrice()" (mouseup)="observePrice()" (touchmove)="observePrice()" (touchend)="observePrice()" #priceRange>
+      <input type="range" class="custom-range" min="1" max="5" value="1" id="priceRange" (mousemove)="observePrice()" (mouseup)="observePrice()" (touchmove)="observePrice()" (touchend)="observePrice()" #priceRange>
       <div class="py-3 my-5" *ngIf="pricerange == 1">
         <img src="assets/dollar.svg" alt="Dollar Sign" height="50" width="auto">
       </div>
@@ -25,7 +25,7 @@
       <div class="py-3 my-4" *ngIf="pricerange == 5">
         <img src="assets/the-bag.svg" alt="Dollar Sign" height="98" width="auto">
       </div>
-      <button type="button" class="btn btn-outline-warning c-shadow" (click)="continue()">Continue &#187;</button>
+      <button type="button" class="btn btn-warning c-shadow" (click)="continue()">Continue &#187;</button>
     </div>
   </div>
 </div>

@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 
+import { GiftlistService } from "src/app/services/giftlist.service";
+
 @Component({
   selector: 'app-introduction',
   templateUrl: './introduction.component.html',
@@ -10,7 +12,7 @@ export class IntroductionComponent implements OnInit, OnDestroy {
 
   @ViewChild('welcome') welcome;
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  constructor(public gl: GiftlistService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
   }

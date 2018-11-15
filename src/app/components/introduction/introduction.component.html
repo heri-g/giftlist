@@ -1,7 +1,7 @@
 <div class="row intro">
   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
     <div class="text-center animated px-3 jumbotron py-5 c-shadow" #welcome id="welcome">
-      <h1>Let's Get Started</h1>
+      <h2>Let's Get Started</h2>
       <h4 class="mt-5">
         We're going to ask you a few questions that will help us find the perfect gift for you.
         <!-- On the next screen,<br> choose the characteristics that best describe the person in question. -->
@@ -12,5 +12,10 @@
         <button type="button" class="btn btn-warning btn-lg c-shadow" (click)="next()">Start</button>
       </section>
     </div>
+    <section *ngIf="(gl.heartedLength$ | async) > 0">
+      <div class="alert alert-danger" role="alert">
+        <strong>Your list is still active.</strong>&nbsp;&nbsp;Be sure to save it before you continue or you will have to start over.
+      </div>
+    </section>
   </div>
 </div>

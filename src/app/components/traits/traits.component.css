@@ -1,8 +1,6 @@
 div {
     animation-duration: .3s;
 }
-.cont {
-    position: fixed;
-    right: 20px;
-    top: -60px;
+.traits {
+    margin-top: 15%
 }

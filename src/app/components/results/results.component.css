@@ -1,9 +1,16 @@
-:host-context(.col-12[_ngcontent-c3]) div {
-    top: 15rem;
-}
-:host-context(.col-12[_ngcontent-c4]) div {
-    top: 15rem;
+.results {
+    margin-top: 15%
 }
 svg {
     cursor: pointer !important;
+}
+@media (min-width: 992px) {
+    #column {
+        padding-left: 0 !important;
+        padding-right: 0 !important
+    }
+    .card-wrapper {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
 }
